@@ -1,5 +1,8 @@
 package com.hemebiotech.analytics;
 
-public interface IListToMap {
+import java.util.Map;
 
+public interface IListToMap {
+	
+	public Map<String,Integer> symptomsMap(); 
 }
