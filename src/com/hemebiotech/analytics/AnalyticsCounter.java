@@ -12,6 +12,9 @@ public class AnalyticsCounter {
 		 */
 		ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile ("symptoms.txt");
 		System.out.println(reader.getSymptoms());
-
+		
+		ListToMap convertedList = new ListToMap(reader.getSymptoms());
+		System.out.println(convertedList.symptomsMap());
+		
 	}
 }
