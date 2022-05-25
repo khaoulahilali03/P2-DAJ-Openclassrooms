@@ -8,12 +8,21 @@ import java.util.Map;
 
 public class WriteSymptoms implements IWriteSymptoms{
 	
+	/*
+	 * @param Sorted map of symptoms
+	 */
 	private Map <String,Integer> writer;
 	
+	/*
+	 * Constructor of WriteSymptoms
+	 */
 	public WriteSymptoms(Map<String,Integer> writer) {
 		this.writer = writer;
 	}
 	
+	/*
+	 * The method writeSymptoms() allows to write the sorted map in filepath "result.out"
+	 */
 	public void writeSymptoms() throws IOException {
 		
 		File file = new File ("result.out");

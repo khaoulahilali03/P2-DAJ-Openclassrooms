@@ -18,7 +18,10 @@ public class AnalyticsCounter {
 		 */
 		ListToMap convertedList = new ListToMap(reader.getSymptoms());
 		System.out.println(convertedList.symptomsMap());
-		
+		/*
+		 * Call the WriteSymptom class in the main function to generate 
+		 * a filepath "result.out" with the sorted map 
+		 */
 		Map<String,Integer> symptomsMap = convertedList.symptomsMap();
 		IWriteSymptoms symptomWriter = new WriteSymptoms(symptomsMap);
 		symptomWriter.writeSymptoms();
