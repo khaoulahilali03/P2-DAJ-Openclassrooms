@@ -11,7 +11,7 @@ public class WriteSymptoms implements IWriteSymptoms{
 	private Map <String,Integer> writer;
 	
 	public WriteSymptoms(Map<String,Integer> writer) {
-		writer = this.writer;
+		this.writer = writer;
 	}
 	
 	public void writeSymptoms() throws IOException {

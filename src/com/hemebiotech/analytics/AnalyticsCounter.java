@@ -1,6 +1,6 @@
 package com.hemebiotech.analytics;
 
-
+import java.util.Map;
 
 public class AnalyticsCounter {
 			
@@ -18,6 +18,11 @@ public class AnalyticsCounter {
 		 */
 		ListToMap convertedList = new ListToMap(reader.getSymptoms());
 		System.out.println(convertedList.symptomsMap());
+		
+		Map<String,Integer> symptomsMap = convertedList.symptomsMap();
+		IWriteSymptoms symptomWriter = new WriteSymptoms(symptomsMap);
+		symptomWriter.writeSymptoms();
+		
 		
 	}
 }
