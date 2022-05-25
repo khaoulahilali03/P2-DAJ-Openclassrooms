@@ -12,6 +12,12 @@ public class AnalyticsCounter {
 		 */
 		ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile ("symptoms.txt");
 		System.out.println(reader.getSymptoms());
-
+		/*
+		 * Call the ListToMap class in the main function 
+		 * Display the map of symptoms with the number of iteration for each symptom
+		 */
+		ListToMap convertedList = new ListToMap(reader.getSymptoms());
+		System.out.println(convertedList.symptomsMap());
+		
 	}
 }
