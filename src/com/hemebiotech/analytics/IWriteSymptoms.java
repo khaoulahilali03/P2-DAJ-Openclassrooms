@@ -12,7 +12,7 @@ import java.io.IOException;
 public interface IWriteSymptoms {
 	/*
 	 * 
-	 * generate a filepath "resoult.out" with the sorted map of symptoms and the number 
+	 * generate a filepath "result.out" with the sorted map of symptoms and the number 
 	 * of iteration for each symptom
 	 */
 	public void writeSymptoms() throws IOException;
