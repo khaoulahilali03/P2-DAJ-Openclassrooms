@@ -25,7 +25,7 @@ public class WriteSymptoms implements IWriteSymptoms{
 	 */
 	public void writeSymptoms() throws IOException {
 		
-		File file = new File ("result.out");
+		File file = new File ("Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application\\Project02Eclipse\\result.out");
 		try {
 			BufferedWriter bf = new BufferedWriter(new FileWriter(file));
 			for(Map.Entry<String, Integer>entry : writer.entrySet()) {
